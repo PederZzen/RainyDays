@@ -8,25 +8,28 @@ h3 {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-p {
+p,
+a {
   font-family: montserrat, Helvetica, sans-serif;
 }
 
-nav ul {
+/* Navigation */
+
+.top_nav ul {
   list-style-type: none;
   display: block;
   padding-left: 0px;
   overflow: hidden;
 }
 
-nav li {
+.top_nav li {
   border: 1px;
   display: inline-block;
   margin-right: 10px;
   color: #fff;
 }
 
-nav li a {
+.top_nav li a {
   text-decoration: none;
   color: #000;
   display: inline-block;
@@ -36,3 +39,5 @@ nav li a {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   letter-spacing: 0.2em;
 }
+
+/* Home Page */
