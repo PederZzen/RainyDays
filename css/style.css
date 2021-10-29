@@ -6,11 +6,29 @@ h1,
 h2,
 h3 {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  color: #0a3641;
 }
 
 p,
 a {
   font-family: montserrat, Helvetica, sans-serif;
+  color: #0a3641;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  width: 150px;
+  margin: 20px auto;
 }
 
 /* Navigation */
@@ -19,25 +37,117 @@ a {
   list-style-type: none;
   display: block;
   padding-left: 0px;
-  overflow: hidden;
 }
 
 .top_nav li {
   border: 1px;
   display: inline-block;
   margin-right: 10px;
-  color: #fff;
 }
 
 .top_nav li a {
-  text-decoration: none;
-  color: #000;
   display: inline-block;
   text-align: center;
-  margin: 0px 30px;
+  margin: 0 30px;
   text-transform: uppercase;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
 }
 
 /* Home Page */
+
+.hero {
+  background-image: url(../media/images/Grønn_jakke.jpg);
+  background-size: cover;
+  background-position-x: right;
+  min-height: 95vh;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+}
+
+#hero_content {
+  background-color: rgba(111, 112, 94, 0.8);
+  color: white;
+  text-align: center;
+  max-width: 300px;
+  height: 450px;
+  line-height: 150%;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#hero_content > * {
+  justify-content: center;
+}
+
+.hero h1,
+.hero p,
+.hero a {
+  color: white;
+  margin: 50px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+}
+
+.hero a {
+  text-transform: uppercase;
+  border: 1px solid white;
+  padding: 10px 50px;
+}
+
+.hero a:hover {
+  border: 1px solid rgb(190, 190, 190);
+}
+
+.most-popular {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+  text-decoration: none;
+  gap: 20px;
+}
+
+.most-popular h3 {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.most-popular img {
+  width: 100%;
+}
+
+.most-popular h2 {
+  grid-column: -1/1;
+  margin-bottom: 50px;
+}
+
+.products {
+  background-color: #f3f3f3;
+  padding: 10px;
+}
+
+.shortcuts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 100px auto;
+  gap: 10px;
+}
+
+.shortcuts img {
+  width: 100%;
+}
+
+.shortcuts h3 {
+  background-color: #6f705e;
+  color: white;
+  padding: 10px;
+}
