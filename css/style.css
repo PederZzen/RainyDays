@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 body {
   background-color: #fdfdfd;
 }
@@ -66,7 +70,7 @@ header {
   background-position-x: right;
   min-height: 95vh;
   max-width: 100%;
-  margin: auto;
+  margin: 10px auto;
   display: flex;
 }
 
@@ -151,7 +155,7 @@ header {
 .shortcuts {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 100px auto;
+  margin: 100px 10px;
   gap: 10px;
   position: relative;
 }
@@ -169,4 +173,9 @@ header {
   font-size: 1.5em;
   position: absolute;
   top: 90px;
+}
+
+footer {
+  background-color: #6f705e;
+  margin: 0;
 }
