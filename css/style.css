@@ -146,10 +146,11 @@ header {
 .products {
   background-color: #f3f3f3;
   padding: 10px;
+  border: 1.5px solid #f3f3f3;
 }
 
 .products:hover {
-  background-color: #d8d5d5;
+  background-color: #ffffff;
 }
 
 .shortcuts {
