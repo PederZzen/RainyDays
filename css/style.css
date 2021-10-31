@@ -160,24 +160,38 @@ header {
   padding: 10px;
 }
 
+/* --------------------- */
+
 .shortcuts {
+  display: flex;
+}
+
+.shortcuts > div {
   margin: 100px 10px;
   gap: 10px;
-  display: flex;
+  position: relative;
 }
 
 .shortcuts img {
   width: 100%;
-  opacity: 50%;
+  opacity: 70%;
 }
 
 .shortcuts h3 {
   background-color: #6f705e;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 10px 60px;
+  font-size: 2vw;
+  text-transform: capitalize;
   margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+/* --------------------- */
 
 footer {
   background-color: #6f705e;
