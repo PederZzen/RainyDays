@@ -34,7 +34,7 @@ header {
 .logo {
   display: flex;
   width: 150px;
-  margin: 10px auto;
+  margin: 15px auto;
 }
 
 /* Icons */
@@ -91,7 +91,7 @@ header {
 
 .hero img {
   width: 100%;
-  height: 95vh;
+  height: 30em;
   object-fit: cover;
   object-position: 70% 0;
 }
@@ -100,7 +100,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(111, 112, 94);
+  background-color:#0a3641;
   color: white;
   text-align: center;
   line-height: 150%;
@@ -141,7 +141,6 @@ header {
   margin: 100px auto;
   max-width: 600px;
   text-align: center;
-  text-decoration: none;
   gap: 10px;
 }
 
@@ -191,7 +190,7 @@ header {
 .shortcuts img {
   width: 100%;
   height: 200px;
-  opacity: 70%;
+  opacity: 90%;
   object-fit: cover;
   object-position: 0 20%;
 }
@@ -200,16 +199,13 @@ header {
   object-position: 0 40%;
 }
 
-#shop_womens {
-  object-position: 0 30%;
-}
-
-.shortcuts h3 {
-  background-color: #6f705e;
+.shortcuts a {
+  background-color: #0a3641;
   color: white;
   text-align: center;
-  padding: 15px 100px;
-  font-size: 1.5em;
+  padding: 11px 20px;
+  border: 1px solid white;
+  font-size: 1em;
   text-transform: capitalize;
   position: absolute;
   white-space: nowrap;
@@ -222,7 +218,7 @@ header {
 /* Footer Section */
 
 footer {
-  background-color: #6f705e;
+  background-color: #0a3641;
   padding: 30px;
   display: flex;
   align-items: center;
@@ -284,12 +280,11 @@ footer {
 
   .shortcuts {
     grid-template-columns: repeat(3, 1fr);
-    max-width: 100%;
-    margin: 100px 5px;
+    max-width: 1000px;
   }
 
   .shortcuts h3 {
-    padding: 10px 60px;
+    #padding: 10px 40px;
   }
 
   .shortcuts img {
@@ -355,7 +350,7 @@ footer {
   }
 
   #hero_content {
-    background-color: rgba(111, 112, 94, 0.8);
+    background-color: rgba(10, 54, 65, 0.8);
     position: absolute;
     top: 50px;
     left: 50px;
