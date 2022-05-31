@@ -1,43 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RainyDays | Home</title>
-    <meta name="description" content="Buy high quality jackets from Rainy Days" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/84e2c8f8e1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <meta
+      name="description"
+      content="Have any thoughts? We would love to hear from you! You can reach us through this form or give us a call on +4741200854 - RainyDays">
+    <title>Contact | RainyDays</title>
   </head>
+
   <body>
     <header>
-      <a href="index.html"><img src="./media/images/RainyDays_Logo_header.png" alt="RainyDays Logo" width="210" /></a>
-      <nav>
-        <hr />
-        <ul>
-          <li><a href="new-arrivals.html">New Arrivals</a></li>
-          <li><a href="mens.html">Mens</a></li>
-          <li><a href="womens.html">Womens</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <hr />
-      </nav>
-    </header>
-    <main></main>
-    <footer>
-      <img src="index.html" alt="RainyDays Logo" />
-      <div>
-        <p>Subscribe to our newsletter</p>
-        <!--Enter email-->
-        <a href="#">Sign up</a>
+        <a href="index.html"><img src="./media/img/RainyDays_Logo_header.png" alt="RainyDays Logo" id="logo"></a>
+        <label for="hamburger-menu">
+            <img src="./media/icons/Hamburger_menu_icon.svg" alt="Menu icon">
+        </label>
+        <input type="checkbox" id="hamburger-menu">
+        <nav class="top_nav">
+            <ul>
+                <li><a href="new_arrivals.html">new arrivals</a></li>
+                <li><a href="mens.html">mens</a></li>
+                <li><a href="womens.html">womens</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+        <div id="nav_icons">
+          <a href="./favorites.html"><img src="./media/icons/Favorites_icon.svg" alt="My favorites"></a>
+          <a href="./checkout.html"><img src="./media/icons/Shopping_cart_icon.svg" alt="My shopping cart"></a>
       </div>
-      <!--Social media icons-->
-      <ul>
-        <li><a href="new-arrivals.html">New Arrivals</a></li>
-        <li><a href="mens.html">Mens</a></li>
-        <li><a href="womens.html">Womens</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+        <div>
+            <input type="text" id="searchbar" placeholder="Search...">
+            <img src="./media/icons/Search.svg" alt="search icon" id="search-icon">
+        </div>
+    </header>
+
+    <main>
+      <section class="breadcrumbs">
+        <ol>
+          <li class="trail"><a href="./index.html">Home</a></li>
+          <li class="trail">Contact</li>
+        </ol>
+      </section>
+
+      <section class="contact">
+        <h1>contact</h1>
+        <hr>
+        <p>Have any thoughts? We would love to hear from you!</p>
+        <form method="get">
+          <ul>
+            <li>
+              <input type="text" name="full_name" placeholder="Full Name">
+            </li>
+            <li>
+              <input type="email" name="email" placeholder="Email">
+            </li>
+            <li>
+              <textarea name="message" placeholder="Whats up?..."></textarea>
+            </li>
+            <li>
+              <button type="submit">Send Message</button>
+            </li>
+          </ul>
+        </form>
+        <p>Or give us a call on +47 412 00 854</p>
+      </section>
+    </main>
+
+    <footer>
+        <a href="./index.html">
+            <img src="./media/img/rainydays_logo_white.png" alt="RainyDays logo" id="footer_logo">
+        </a>
+        <div class="newsletter">
+            <h3> Subscribe to our newsletter</h3>
+            <input type="email" id="newsletter_textarea" name="mail" placeholder="Email">
+            <a href="./index.html" id="sign_up">Sign up</a>
+        </div>
+        <div id="footer_icons">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+        </div>
+        <nav class="footer_nav">
+            <ul>
+              <li><a href="./new_arrivals.html">New Arrivals</a></li>
+              <li><a href="./mens.html">Mens</a></li>
+              <li><a href="./womens.html">Womens</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
     </footer>
   </body>
 </html>
